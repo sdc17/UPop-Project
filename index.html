@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>UPop: Unified and Progressive Pruning for Compressing Vision-Language Transformers</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">UPop: Unified and Progressive Pruning for Compressing Vision-Language Transformers</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="http://dachuanshi.com/" target="_blank">Dachuan Shi</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://chaofantao.top/" target="_blank">Chaofan Tao</a><sup>3</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://jin-ying.github.io/" target="_blank">Ying Jin</a><sup>4</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://scholar.google.com/citations?hl=en&user=M9qKrogAAAAJ" target="_blank">Zhendong Yang</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.htm" target="_blank">Chun Yuan</a><sup>1,✉</sup></span>
+                        <span class="author-block">
+                          <a href="https://myownskyw7.github.io/" target="_blank">Jiaqi Wang</a><sup>2,✉</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>Shanghai AI Laboratory<br>
+                      <sup>3</sup>The University of Hong Kong, <sup>4</sup>The Chinese University of Hong Kong<br>
+                      ICML 2023</span>
+                    <span class="eql-cntrb"><small><br><sup>✉</sup>Corresponding authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2301.13741.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- ArXiv abstract Link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2301.13741" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/sdc17/UPop" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/overview.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-justified">
+        UPop is the first structured pruning framework for vision-language Transformers. 
+        It enables effective structured pruning on various multi-modal & uni-modal tasks, datasets, and model architectures.
+        The video demonstrates that Unified Search rescues us from the burden of repeated experiments (e.g., doing grid search) for 
+        searching optimal compression ratios among different modalities and structures. 
+        Furthermore, Progressive Pruning eliminates the weight gap between the searched model and the pruned subnet to be retrained, 
+        therefore gaining better convergence and performance.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Real-world data contains a vast amount of multimodal information, among which vision and language are the two most representative modalities. 
+            Moreover, increasingly heavier models, e.g., Transformers, have attracted the attention of researchers to model compression. However, how
+            to compress multimodal models, especially visonlanguage Transformers, is still under-explored.
+            This paper proposes the Unified and Progressive Pruning (UPop) as a universal vison-language Transformer compression framework, 
+            which incorporates 1) unifiedly searching multimodal subnets in a continuous optimization space from
+            the original model, which enables automatic assignment of pruning ratios among compressible
+            modalities and structures; 2) progressively searching and retraining the subnet, which maintains
+            convergence between the search and retrain to attain higher compression ratios. Experiments on
+            various tasks, datasets, and model architectures demonstrate the effectiveness and versatility of
+            the proposed UPop framework. The code is available at https://github.com/sdc17/UPop.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Overall Performance</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Overview of experimental results at 2x compression. The
+              proposed UPop framework is efficient and effective on various
+              tasks, datasets, and architectures. Bold indicates the best post-compression performance. Mask-based Pruning is extended from
+              the SOTA pruning method ViT-Slimming (Chavan et al., 2022).
+            </p>
+          </div>
+          <img src="static/images/exp_overview.png" alt="Overall Experimental Results" class="center-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Detailed Experimental Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item blend-img-item item-full-pro">
+          <img src="static/images/exp_nlvr.png" alt="Detailed nlvr" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+            Compress BLIP on the NLVR2. Bold indicates the best performance
+            at the same compression ratio. Reduce indicates compression times. The marker
+            ✓ or ✗ indicates whether the model converges at the current compression times.
+            The units of Params and FLOPs are M and G, respectively
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-iroc">
+          <img src="static/images/exp_caption_vqa.png" alt="Detailed caption and vqa" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+          Compress BLIP on the Image Caption task and the Visual Question Answering task. The CIDEr, SPICE, test-dev, and
+          test-std are the higher the better. The units of Params and FLOPs are M and G, respectively.
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-proc">
+          <img src="static/images/exp_retrieval.png" alt="Detailed retrieval" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+          Compress BLIP on the COCO and Flickr30K datasets of the Image-Text Retrieval task. The R@1, R@5, and R@10 are the
+          higher the better. The units of Params and FLOPs are M and G, respectively.
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-proc">
+          <img src="static/images/exp_retrieval_clip.png" alt="Detailed retrieval clip" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+          Compress CLIP on the COCO and Flickr30K datasets of the Image-Text Retrieval task.
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-proc">
+          <img src="static/images/exp_classification.png" alt="Detailed classification" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+            <strong>UPop also works well on uni-modal task.</strong> Compress DeiT on the ImageNet dataset. The units of Params and FLOPs are M and G, respectively. The superscript *
+            indicates the performance of the deployable model if the original model is non-deployable. For fairness of comparison, all reported experimental
+            results, including UPop, do not use knowledge distillation.
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-proc">
+          <img src="static/images/exp_tradeoff.png" alt="Detailed tradeoff" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+            <strong>UPop can also achieve very competitive performance on uni-modal task. </strong> The left and right subfigures illustrate the Accuracy-FLOPs and Accuracy-Parameter trade-off, respectively. ∗
+            indicates the performance of the deployable model if the original model is non-deployable. Two subfigures demonstrate that the proposed UPop
+            (marked with the blue triangle) achieves better performance on both trade-offs. Note that token-specific compression approaches only
+            reduce FLOPs and not the number of parameters. Therefore they are vertical lines in the Accuracy-Parameter trade-off figure.
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-proc">
+          <img src="static/images/exp_segmentation.png" alt="Detailed segmentation" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+            <strong>UPop can also achieve very competitive performance on uni-modal task. </strong> Compress Segmenter on the ADE20k dataset. The units of Params and FLOPs are M and G, respectively. The SS and MS
+            mean single-scale and multi-scale testing for the mIoU metric, respectively. With and Without superscript * means CNN-based and
+            Transformer-based models, respectively.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Visualization</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item blend-img-item item-full-pro">
+          <img src="static/images/vis1.png" alt="Detailed nlvr" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+            The proportion of all compressible components retained in the compressed BLIP model on the NLVR2. These six subfigures
+            represent the original model and the compressed model at the 2x, 3x, 4x, 5x, and 10x compression ratio, respectively. In each
+            subfigure, the horizontal axis represents the layer number, the vertical axis represents the compressible components corresponding to each
+            ζi, and the number in cells represents the retained proportion of a certain component's certain layer. 
+          </h2>
+        </div>
+        <div class="item blend-img-item item-full-pro">
+          <img src="static/images/vis2.png" alt="Detailed nlvr" class="center-image blend-img-background"/>
+          <h2 class="subtitle has-text-justified">
+            The left subfigure: variation of compressible components as the compression ratio increases. The right subfigure: variation of
+            layers as the compression ratio increases. 
+          </h2>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Algorithm Implementation</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Line 2 ~ 12 implements the search phase, and Line 13 ~ 15
+              implements an optional retrain phase.
+            </p>
+          </div>
+          <img src="static/images/algorithm.png" alt="Algorithm" class="center-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Related Research</h2>
+          <div class="level-set has-text-justified">
+            <ul>
+              <li>CrossGET: Cross-Guided Ensemble of Tokens for Accelerating Vision-Language Transformers. 
+                CrossGET is a universal token ensemble framework CrossGET for accelerating various vision-language Transformers.
+                <a href="https://arxiv.org/abs/2305.17455" target="_blank">[ArXiv]</a>  
+                <a href="https://arxiv.org/pdf/2305.17455.pdf" target="_blank">[Paper]</a> 
+                <a href="https://github.com/sdc17/CrossGET" target="_blank">[Code]</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{shi2023upop,
+        title={Upop: Unified and progressive pruning for compressing vision-language transformers},
+        author={Shi, Dachuan and Tao, Chaofan and Jin, Ying and Yang, Zhendong and Yuan, Chun and Wang, Jiaqi},
+        journal={arXiv preprint arXiv:2301.13741},
+        year={2023}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. 
+            We thank the original authors for the open-source template. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
